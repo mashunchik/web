@@ -1,0 +1,132 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+/* Стилі для header */
+header {
+    background-color: #000051;
+    color: rgb(131, 174, 239);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* Стилі для sidebar */
+.sidebar {
+    background-color: #000051;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    flex-basis: 10%; /* Змінено ширину блоку sidebar */
+}
+
+/* Стилі для блоку main-content */
+.main-content {
+    flex: 1; /* Заповнює доступний залишок простору */
+}
+
+/* Змінено стилі для .container */
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #e8e3e4;
+    color: #4a71b3;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #000051;
+    text-align: left;
+    flex-basis: 25%;
+}
+/* Стилі для content */
+/* Решта стилів тут */
+
+/* Стилі для content */
+.content{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.content img{
+    width: calc(30% - 20px);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.content img:hover {
+    transform: scale(1.1);
+}
+
+a:hover {
+    color: rgb(0, 78, 147);
+}
+
+.box {
+    width: 10px;
+    height: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 5px 5px 10px #000051;
+}
+  
+
+/* Стилі для footer */
+/* Решта стилів тут */
+
+/* Стилі для footer */
+.footer {
+    background-color: #000051;
+    color: #ffffff;
+    min-width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  .footer table {
+    width: 100%;
+    padding: 40px 100px;
+  }
+  .footer th,
+  .footer td {
+    width: 33%;
+    text-align: left;
+  }
+  .footer th {
+    text-transform: uppercase;
+  }
+  .footer td {
+    padding: 5px 10px;
+  }
