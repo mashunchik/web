@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Реєстрація</title>
+  <link rel="stylesheet" type="text/css" href="styleregister.css">
+  <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-4">Реєстрація</h1>
+    <div id="registration-container" class="mt-4">
+      <form id="registration-form">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Пароль:</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            required
+          />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="last-name">Прізвище:</label>
+            <input type="text" class="form-control" id="last-name" required />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="first-name">Ім’я:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="first-name"
+              required
+            />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="middle-name">По батькові:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="middle-name"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="birth-date">Дата народження:</label>
+          <input type="date" class="form-control" id="birth-date" required />
+        </div>
+
+        <div class="form-group">
+          <label for="group">Група:</label>
+          <select class="form-control" id="group">
+            <option value="group1">ІА-21</option>
+            <option value="group2">ІА-22</option>
+            <option value="group3">ІА-23</option>
+            <option value="group4">ІА-24</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Стать:</label><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              id="gender-male"
+              name="gender"
+              value="male"
+            />
+            <label class="form-check-label" for="gender-male">Чоловік</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              id="gender-female"
+              name="gender"
+              value="female"
+            />
+            <label class="form-check-label" for="gender-female">Жінка</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Номер телефону:</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            required
+            pattern="\+380[0-9]{9}"
+            value="+380"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="file">Завантажити файл:</label>
+          <input type="file" class="form-control-file" id="file" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Зареєструватися</button>
+      </form>
+    </div>
+
+  <div id="error-message"></div>
+
+  <table id="data-table">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Email</th>
+        <th>Прізвище</th>
+        <th>Ім’я</th>
+        <th>По батькові</th>
+        <th>Дата народження</th>
+        <th>Група</th>
+        <th>Стать</th>
+        <th>Номер телефону</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <button id="delete-selected">Видалити обрані</button>
+  <button id="duplicate-selected">Дублювати обрані</button>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
