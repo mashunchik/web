@@ -1,0 +1,58 @@
+/* Стилізуємо контейнер для форми та таблиці */
+#container {
+    width: 80%; /* Ширина контейнера */
+    margin: 0 auto; /* Горизонтальне центрування */
+    padding: 20px; /* Відступи від країв */
+    background-color: #f2f2f2; /* Колір фону контейнера */
+    border: 1px solid #ccc; /* Рамка контейнера */
+    border-radius: 5px; /* Закруглені кути контейнера */
+  }
+  body {
+    background-image: url('https://images.wallpaperscraft.ru/image/single/tsvety_sakura_pattern_139321_1280x720.jpg'); /* Замініть 'your-image.jpg' на шлях до вашої картинки */
+    background-size: cover; /* Масштабуємо фонову картинку на всю сторінку */
+    background-attachment: fixed; /* Робимо фон фіксованим */
+  }
+  
+  /* Стилізуємо кнопки для таблиці */
+  #delete-selected,
+  #duplicate-selected {
+    background-color: rgb(60, 128, 206); /* Колір фону кнопок */
+    color: #fff; /* Колір тексту на кнопках */
+    padding: 10px 20px; /* Відступи всередині кнопок */
+    border: none; /* Видаляємо рамку */
+    border-radius: 5px; /* Закруглені кути кнопок */
+    cursor: pointer; /* Змінюємо курсор на показник при наведенні */
+    margin-right: 10px; /* Відступ між кнопками */
+  }
+  
+  #delete-selected:hover,
+  #duplicate-selected:hover {
+    background-color: #3b77ca; /* Колір фону кнопок при наведенні */
+  }
+  
+  /* Стилізуємо форму */
+  #registration-form {
+    display: block; /* Блоковий елемент */
+  }
+  
+  /* Стилізуємо кнопки форми */
+  #registration-form input[type="submit"] {
+    background-color: #ff97e8; /* Колір фону кнопки */
+    color: #fff; /* Колір тексту на кнопці */
+    padding: 10px 20px; /* Відступи всередині кнопки */
+    border: none; /* Видаляємо рамку */
+    border-radius: 5px; /* Закруглені кути кнопки */
+    cursor: pointer; /* Змінюємо курсор на показник при наведенні */
+  }
+  
+  /* Стилізуємо таблицю та кнопки */
+  #data-table {
+    width: 100%; /* Розтягуємо таблицю на всю ширину контейнера */
+    margin-top: 20px; /* Відступи від верхнього краю таблиці */
+  }
+  
+  #delete-selected,
+  #duplicate-selected {
+    margin-top: 20px; /* Відступи між кнопками та таблицею */
+  }
+  
